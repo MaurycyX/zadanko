@@ -1,0 +1,126 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #131722;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'header header header header header'
+    'books form form form .'
+    'books form form form .'
+    'books form form form .'
+    'books form form form .'
+    'books form form form info';
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  background-color: #5c63db;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+
+  margin-left: 5vw;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid gray;
+}
+.menu li:last-child {
+  border-right: none;
+}
+.menu li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #f6f6f6;
+  font-size: 1.3rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.books {
+  grid-area: books;
+  padding: 15px;
+  border-right: 2px solid #f6f6f6;
+  background-color: #18202d;
+  color: #f6f6f6;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form label {
+  color: #f6f6f6;
+  font-size: 1.1rem;
+}
+
+.form input {
+  width: 200px;
+  margin: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.form input[type='text'],
+.form input[type='number'] {
+  border: none;
+  border-bottom: 2px solid #5c63db;
+  background-color: transparent;
+}
+
+.form input[type='date'] {
+  color: black;
+}
+
+.form button {
+  width: 200px;
+  background-color: #5c63db;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 0;
+}
+
+.info {
+  grid-area: info;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.success {
+  text-align: center;
+  color: lime;
+}
+
+address {
+  color: #f6f6f6;
+}

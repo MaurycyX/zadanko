@@ -144,5 +144,12 @@
       Warszawa ul. Fajna 15 <br/>
       Numer Telefonu: 123456789
   </address>
+  <script>
+    document.getElementById('addition_date').valueAsDate = new Date();
+
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+  </script>
 </body>
 </html>

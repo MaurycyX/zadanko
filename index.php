@@ -75,7 +75,7 @@
   ?>
   <header class="header">
     <div class="logo">
-      <img src="logo.png" alt="LOGO" class="logo"/>
+    <a href="#"><img src="logo.png"  alt="LOGO"  class="logo"/></a>
     </div>
     <ul class="menu">
       <li><a href="https://www.google.com/" class="link">LINK1</a></li>
